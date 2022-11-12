@@ -28,9 +28,10 @@ const createWindow = (): void => {
       );
   });
 
-  mainWindow.loadURL(EXCEL_TOOLS_WEBPACK_ENTRY + "/#");
+  mainWindow.setMenu(null);
+  mainWindow.loadURL(EXCEL_TOOLS_WEBPACK_ENTRY);
 
-  mainWindow.webContents.openDevTools();
+  if (!app.isPackaged) mainWindow.webContents.openDevTools();
 };
 
 app.on("ready", createWindow);

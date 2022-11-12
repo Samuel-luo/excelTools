@@ -9,11 +9,21 @@ import { mainConfig } from "./webpack.main.config";
 import { rendererConfig } from "./webpack.renderer.config";
 
 const config: ForgeConfig = {
-  packagerConfig: {},
+  packagerConfig: {
+    appVersion: "1.0.0",
+    name: "excelTools",
+    appCopyright: "Samuel-luo(1319433916@qq.com)",
+    icon: "./excelTools.ico",
+    win32metadata: {
+      ProductName: "excelTools",
+      CompanyName: "Samuel-luo",
+      FileDescription: "一个 excel 工具软件"
+    }
+  },
   rebuildConfig: {},
   makers: [
-    new MakerSquirrel({}),
-    new MakerZIP({}, ["darwin"]),
+    // new MakerSquirrel({}),
+    new MakerZIP({}, ["darwin", "win32"]),
     new MakerRpm({}),
     new MakerDeb({})
   ],

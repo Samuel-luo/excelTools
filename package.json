@@ -2,12 +2,12 @@
   "name": "exceltools",
   "productName": "exceltools",
   "version": "1.0.0",
-  "description": "My Electron application description",
+  "description": "excel tools",
   "main": ".webpack/main",
   "scripts": {
     "start": "chcp 65001 && electron-forge start",
     "package": "electron-forge package",
-    "make": "electron-forge make",
+    "make": "chcp 65001 && electron-forge make",
     "publish": "electron-forge publish",
     "lint": "eslint --ext .ts,.tsx ."
   },
