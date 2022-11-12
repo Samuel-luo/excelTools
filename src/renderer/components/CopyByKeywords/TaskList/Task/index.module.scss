@@ -1,0 +1,18 @@
+.task-container {
+  margin: 10px 0 !important;
+
+  .delete {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+
+  .title {
+    margin-bottom: 10px;
+  }
+
+  .rule {
+    margin-top: 10px;
+  }
+}

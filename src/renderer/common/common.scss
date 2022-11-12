@@ -1,0 +1,13 @@
+.app_container {
+  width: 100%;
+  height: auto;
+  padding: 40px 10px 10px;
+  box-sizing: border-box;
+}
+
+button.center-button,
+button[type="button"].center-button {
+  display: block;
+  width: 20%;
+  margin: auto;
+}

@@ -1,0 +1,32 @@
+.option {
+  width: 180px;
+  height: 180px;
+  box-shadow: 0 0 5px 0 rgba(167, 167, 167, 0.4);
+  border-radius: 5px;
+  margin: 20px;
+  transition: all .5s ease;
+  overflow: hidden;
+
+  img {
+    width: 100px;
+    height: 100px;
+    margin: 20px 40px 0;
+    vertical-align: middle;
+  }
+
+  span {
+    display: inline-block;
+    width: inherit;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 18px;
+    color: #000000;
+    font-family: "self-default", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+  }
+
+  &:hover {
+    transform: scale(0.96);
+    box-shadow: 0 0 10px 0 rgba(128, 128, 128, 0.47);
+  }
+}
