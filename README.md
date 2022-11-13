@@ -1,4 +1,4 @@
-# excelTools [Endlish README](./README.en.md)
+# excelTools [English README](./README.en.md)
 
 一个 excel 工具集合
 
