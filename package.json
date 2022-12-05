@@ -6,12 +6,15 @@
   "main": ".webpack/main",
   "scripts": {
     "start": "chcp 65001 && electron-forge start",
-    "package": "electron-forge package",
-    "make": "chcp 65001 && electron-forge make",
+    "package": "chcp 65001 && electron-forge package --arch=all",
+    "make": "chcp 65001 && electron-forge make --arch=all",
     "publish": "electron-forge publish",
     "lint": "eslint --ext .ts,.tsx ."
   },
-  "keywords": [],
+  "keywords": [
+    "excel",
+    "electron"
+  ],
   "author": {
     "name": "Samuel-luo",
     "email": "1319433916@qq.com"
