@@ -1,8 +1,8 @@
 {
   "name": "exceltools",
-  "productName": "exceltools",
+  "productName": "excelTools",
   "version": "1.0.0",
-  "description": "excel tools",
+  "description": "an excel tools",
   "main": ".webpack/main",
   "scripts": {
     "start": "chcp 65001 && electron-forge start",
